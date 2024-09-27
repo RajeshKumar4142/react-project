@@ -1,0 +1,124 @@
+.gpt3_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 5rem;
+  color: #fff;
+}
+
+.gpt3_navbar_links {
+  display: flex;
+  align-items: center;
+}
+
+.gpt3_navbar_links_logo img {
+  width: 110px;
+}
+
+.gpt3_navbar_links_container {
+  display: flex;
+  margin-left: 7rem;
+  gap: 2rem;
+}
+
+.gpt3_navbar_links_container p {
+  margin: 0;
+}
+
+.gpt3_navbar_links_container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.gpt3_navbar-sign {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gpt3_navbar-sign p {
+  margin: 0;
+}
+
+.gpt3_navbar-sign button {
+  background-color: #ff3131;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.gpt3_navbar-menu {
+  display: none;
+}
+
+.gpt3_navbar-menu_container {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 1rem;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.gpt3_navbar-menu_container-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gpt3_navbar-menu_container-links p {
+  margin: 0;
+}
+
+.gpt3_navbar-menu_container-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.gpt3_navbar-menu_container-links-sign {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.scale-up-center {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gpt3_navbar_links_container,
+  .gpt3_navbar-sign {
+    display: none;
+  }
+  .gpt3_navbar-menu {
+    display: block;
+  }
+}
+
+.gpt3_navbar-menu_container-links-sign button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #ff3131;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
